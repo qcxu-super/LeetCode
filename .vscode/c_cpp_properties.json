@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${default}",
+                "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include",
+                "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include\\c++",
+                "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include\\c++\\mingw32",
+                "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include\\c++\\backward",
+                "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include-fixed"
+            ],
+            "compilerPath": "E:\\Programs\\MinGW\\bin\\g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-gcc-x86"
+        }
+    ],
+    "version": 4
+}

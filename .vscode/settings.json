@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "random": "cpp",
+        "ostream": "cpp",
+        "cstdio": "cpp",
+        "vector": "cpp",
+        "new": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "tuple": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Chromium, IndentWidth: 4}"
+}
