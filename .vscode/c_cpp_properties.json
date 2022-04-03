@@ -8,7 +8,8 @@
                 "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include\\c++",
                 "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include\\c++\\mingw32",
                 "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include\\c++\\backward",
-                "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include-fixed"
+                "E:\\Programs\\MinGW\\lib\\gcc\\mingw32\\9.2.0\\include-fixed",
+                "E:\\Programs\\MinGW\\include"
             ],
             "compilerPath": "E:\\Programs\\MinGW\\bin\\g++.exe",
             "cStandard": "c11",
