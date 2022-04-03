@@ -25,6 +25,11 @@
 差分:B[1]+B[2]+...+B[n]=(A[2]-A[1])+(A[3]-A[2])+...+(A[n]-A[n-1])=A[n]
 --> 结论：差分数组B的前缀和，就是原数组A
 --> 差分一般这样用：在计算给A的子段统一加一个数的时候，即A[l,r]+d，时间复杂度O(n)。但利用差分算，只要B[l]+d、B[r+1]-d，时间复杂度O(1)
+
+前缀和的用法：求“子段和”（窗口求和）
+用前缀和需满足区间减法性质，即[l,r]的信息，可以由[1,l]和[l,r]的信息推导出来
+
+还有一种特殊的，是前缀max/前缀min
 ```
 
 - [1248. 统计「优美子数组」 (median)](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/1248numberOfSubarrays.cpp)
@@ -39,3 +44,31 @@
 
 - [560. 和为 K 的子数组 (median)](https://leetcode-cn.com/problems/subarray-sum-equals-k/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/560subarraySum.cpp)
 
+
+# 5.双指针扫描
+
+```
+用于解决基于“子段”的统计问题
+朴素的做法是双重循环（for l...for r...)，优化的手法是尝试去除内层循环
+
+优化策略有两种：
+1.前缀和：固定右端点，看左端点的取值范围(0..l-1)
+2.双指针扫描/单调队列：移动一个端点，看另一个端点的变动情况。如果同时递增，那就是个滑动窗口
+
+双指针扫描的用法：解决子段问题。维护的信息是关于点的（比如接雨水的两个端点，twoSum的两个端点），跟中间无关的情况。
+如果维护的信息是整个候选集合（多个点），那么用单调队列
+```
+
+- [167. 两数之和 II - 输入有序数组 (median)](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/167twoSum.cpp)
+
+- [1. 两数之和 (easy)](https://leetcode-cn.com/problems/corporate-flight-bookings/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/1twoSum.cpp)
+
+- [15. 三数之和 (median)](https://leetcode-cn.com/problems/3sum/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/15threeSum.cpp)
+
+- [11. 盛最多水的容器 (median)](https://leetcode-cn.com/problems/container-with-most-water/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/11maxArea.cpp)
+
+- [75. 颜色分类 (median)](https://leetcode-cn.com/problems/sort-colors/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/75sortColors.cpp)
+
+- [76. 最小覆盖子串 (hard)](https://leetcode-cn.com/problems/minimum-window-substring/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/76minWindow.cpp)
+
+- [287. 寻找重复数 (median)](https://leetcode-cn.com/problems/find-the-duplicate-number/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/287findDuplicate.cpp)

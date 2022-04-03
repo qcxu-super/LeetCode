@@ -68,6 +68,7 @@ int main() {
 }
 */
 
+/*
 #include "66plusOne.cpp"
 int main() {
     Solution solu;
@@ -76,4 +77,54 @@ int main() {
     vector<int> ans = solu.plusOne(digits);
     for (int& a: ans)
         cout << a << endl;
+}
+*/
+
+/*
+#include "1twoSum.cpp"
+int main() {
+    Solution solu;
+    vector<int> nums = {3,2,4};
+    int target = 6;
+    vector<int> ans = solu.twoSum(nums, target);
+    for (int& a: ans)
+        cout << a << ",";
+}
+*/
+
+/*
+#include "75sortColors.cpp"
+int main() {
+    Solution solu;
+    vector<int> nums = {2,0,2,1,1,0};
+    solu.sortColors(nums);
+    for(int n: nums)
+        cout << n << ",";
+}
+*/
+
+/*
+#include "75sortColors.cpp"
+int main() {
+    Solution solu;
+    // vector<int> nums = {2,0,2,1,1,0};
+    vector<int> nums = {1,2,0};
+    solu.sortColors(nums);
+    for (int& n: nums)
+        cout << n << ",";
+}
+*/
+
+#include "76minWindow.cpp"
+int main() {
+    Solution solu;
+    // string s = "ADOBECODEBANC";
+    // string t = "ABC";
+
+    // string s = "abc";
+    // string t = "b";
+
+    string s = "a";
+    string t = "aa";
+    cout << solu.minWindow(s, t);
 }

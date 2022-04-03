@@ -4,6 +4,8 @@ using namespace std;
 /*
 1109. 航班预订统计
 https://leetcode-cn.com/problems/corporate-flight-bookings/
+
+思路：给子段统一加一个数。用差分。
 */
 
 
