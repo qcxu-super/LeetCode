@@ -22,8 +22,6 @@
 - [160. 相交链表 (easy)](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/02_链表/160getIntersectionNode.cpp)
 
 
-# 4.双向链表&数组/哈希
+# 4.双向链表&数组
 
 - [136. 邻值查找 (hard)](https://www.acwing.com/problem/content/138/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/02_链表/136findNeighborValue.cpp)
-
-- [146. LRU 缓存 (median)](https://leetcode-cn.com/problems/lru-cache/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/02_链表/146LRUCache.cpp)

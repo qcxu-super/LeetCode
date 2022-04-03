@@ -2,22 +2,7 @@
 #include <iostream>
 using namespace std;
 
-#include "146LRUCache.cpp"
-int main() {
-    LRUCache* lRUCache = new LRUCache(2);
-    lRUCache->put(1, 1);  // 缓存是 {1=1}
-    lRUCache->put(2, 2);  // 缓存是 {1=1, 2=2}
-    cout << "1.get(1)=" << lRUCache->get(1) << endl;     // 返回 1
-    lRUCache->put(3, 3);  // 该操作会使得关键字 2 作废，缓存是 {1=1, 3=3}
-    cout << "2.get(2)=" << lRUCache->get(2) << endl;  // 返回 -1 (未找到)
-    lRUCache->put(4, 4);  // 该操作会使得关键字 1 作废，缓存是 {4=4, 3=3}
-    cout << "3.get(1)=" << lRUCache->get(1) << endl;  // 返回 -1 (未找到)
-    cout << "4.get(3)=" << lRUCache->get(3) << endl;  // 返回 3
-    cout << "5.get(4)=" << lRUCache->get(4) << endl;  // 返回 4
-    return 0;
-}
 
-/*
 #include "160getIntersectionNode.cpp"
 int main() {
     ListNode* n11 = new ListNode(4);
@@ -46,7 +31,7 @@ int main() {
         cout << "intersect at " << ans->val;
     return 0;
 }
-*/
+
 
 /*
 #include "142detectCycle.cpp"
