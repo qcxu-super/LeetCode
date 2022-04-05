@@ -59,7 +59,7 @@ for 每个元素
     入栈（新元素+累积宽度）
 ```
 
-- [84. 柱状图中最大的矩形 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/03_堆栈和队列/84largestRectangleArea.cpp)
+- [84. 柱状图中最大的矩形 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/84largestRectangleArea.cpp)
 
 - [42. 接雨水 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/42trap.cpp)
 
