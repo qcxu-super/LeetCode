@@ -18,15 +18,16 @@ struct TreeNode {
 class Solution {
    public:
     TreeNode* convertBST(TreeNode* root) {
-        if (root != nullptr) {
-            convertBST(root->right);  // 更新root->right->val
-            sum += root->val;
-            root->val = sum;  // 更新root->val
-            convertBST(root->left);
-        }
+        if (root == nullptr)
+            return nullptr;
+
+        convertBST(root->right);  // 更新root->right->val
+        sum += root->val;
+        root->val = sum;  // 更新root->val
+        convertBST(root->left);
         return root;
     }
-
+    
    private:
     int sum = 0;
 };
