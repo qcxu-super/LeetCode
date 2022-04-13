@@ -115,3 +115,5 @@ struct TreeNode {
 - [208. 实现 Trie (前缀树) (median)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/208Trie.cpp)
 
 - [212. 单词搜索 II (hard)](https://leetcode-cn.com/problems/word-search-ii/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/212findWords.cpp)
+
+- [79. 单词搜索 (median)](https://leetcode-cn.com/problems/word-search/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/79exist.cpp)
