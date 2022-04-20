@@ -1,12 +1,15 @@
 #include <vector>
 #include <string>
+#include <unordered_map>
+#include <unordered_set>
 using namespace std;
 
 /*
 212. 单词搜索 II
 https://leetcode-cn.com/problems/word-search-ii/
 
-地图类搜索(DFS+方向数组) + 字典树
+可以用纯DFS做，但每次都会重新遍历每个单词，耗时 --> 候选池单词预处理：字典树
+--> 地图类搜索(DFS+方向数组) + 字典树
 DFS搜索的时候，要判断走的路径是否是单词的前缀(208题)。所以要先给words建立一颗字典树
 */
 

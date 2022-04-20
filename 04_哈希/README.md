@@ -16,6 +16,8 @@
 
 - [811. 子域名访问计数 (median)](https://leetcode-cn.com/problems/subdomain-visit-count/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/04_哈希/811subdomainVisits.cpp)
 
+- [169. 多数元素 (easy)](https://leetcode-cn.com/problems/majority-element/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/04_哈希/169majorityElement.cpp)
+
 # 2.set
 
 - [874. 模拟行走机器人 (median)](https://leetcode-cn.com/problems/walking-robot-simulation/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/04_哈希/874robotSim.cpp)

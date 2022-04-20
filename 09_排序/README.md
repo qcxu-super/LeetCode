@@ -117,7 +117,7 @@ O(nlogn)    归并排序             堆排序               快速排序
 
 - [215. 数组中的第K个最大元素 (median)](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/215findKthLargest.cpp)
 
-- [104. 货仓选址](www.acwing.com/problem/content/description/106) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/104findPosition.cpp)
+- [104. 货仓选址](www.acwing.com/problem/content/description/106/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/104findPosition.cpp)
 
 - [493. 翻转对 (hard)](https://leetcode-cn.com/problems/reverse-pairs/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/493reversePairs.cpp)
 
