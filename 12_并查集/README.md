@@ -48,7 +48,7 @@ class DisjointSet {
 
 ```
 
-- [547. 省份数量 (median)](https://leetcode-cn.com/problems/number-of-provinces/) | [solution](https://leetcode-cn.com/problems/perfect-squares/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/12_并查集/547findCircleNum.cpp)
+- [547. 省份数量 (median)](https://leetcode-cn.com/problems/number-of-provinces/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/12_并查集/547findCircleNum.cpp)
 
 - [130. 被围绕的区域 (median)](https://leetcode-cn.com/problems/surrounded-regions/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/12_并查集/130solve.cpp)
 
