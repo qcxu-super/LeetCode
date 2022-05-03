@@ -11,6 +11,8 @@ https://leetcode-cn.com/problems/redundant-connection/
 出边数组在加边的时候，加一条就判一下有没有成环
 判断环的依据是：递归到之前遍历过的点，且不是自己的父亲结点
 时间复杂度 O(n^2)
+
+后面还可以用并查集做
 */
 
 class Solution {

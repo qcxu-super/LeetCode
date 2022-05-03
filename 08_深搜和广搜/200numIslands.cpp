@@ -9,7 +9,9 @@ https://leetcode-cn.com/problems/number-of-islands/
 思路：
 地图类DFS/BFS，用方向数组
 这题本质是在图中划分连通块，用判重
-找到一个没有访问过的1，利用DFS/BFS把连通的都找出来，标记已访问。这样调用几次DFS/BFS就有多少连通块 
+找到一个没有访问过的1，利用DFS/BFS把连通的都找出来，标记已访问。这样调用几次DFS/BFS就有多少连通块
+
+后面还可以用并查集做
 */
 
 class Solution {

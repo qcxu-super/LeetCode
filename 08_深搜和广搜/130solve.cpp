@@ -1,11 +1,14 @@
 #include <vector>
-include<queue> using namespace std;
+#include<queue>
+using namespace std;
 
 /*
 130. 被围绕的区域
 https://leetcode-cn.com/problems/surrounded-regions/
 
 想法是，bfs遍历。只有跟边界的o相连的不是x，其他的都是x
+
+后面可以用并查集做
 */
 
 class Solution {
