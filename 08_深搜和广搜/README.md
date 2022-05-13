@@ -26,6 +26,8 @@
 搜索实际上就是在 树遍历/图遍历 外面套了一个问题的壳子。所以就增加了一步，怎么把实际问题转化为树/图（+1,+2）
 
 搜索是解决一切问题的万金油算法，众多没有多项式时间解法的问题都需要靠搜索求解
+
+优化：记忆化搜索 - visited数组
 ```
 
 
@@ -40,9 +42,6 @@
 - [51. N 皇后 (hard)](https://leetcode-cn.com/problems/n-queens/) / [52. N皇后 II (hard)](https://leetcode-cn.com/problems/n-queens-ii/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/08_深搜和广搜/51solveNQueens.cpp)
 
 - [36. 有效的数独 (median)](https://leetcode-cn.com/problems/valid-sudoku/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/08_深搜和广搜/36isValidSudoku.cpp)
-
-- [37. 解数独 (hard)-TODO](https://leetcode-cn.com/problems/sudoku-solver/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/08_深搜和广搜/37solveSudoku.cpp)
-
 
 
 # 4.广度优先搜索（BFS）
@@ -84,3 +83,17 @@
 
 ```
 
+# 6.搜索剪枝
+
+```
+蛮力搜索（回溯），最原始遍历状态空间的方法，本质上就是试错，一个分支不行，就取消上一步甚至前几步的计算，换个分支重新来过。在分支较多、较深的问题中，容易导致复杂度为指数时间的运算。
+
+剪枝，就是通过已有的信息，提前判定某些分支不可行，或者一定不优，从而减少需要访问的状态空间数量。就像减去搜索树的枝条一样，所以叫剪枝。
+
+```
+
+- [51. N 皇后 (hard)](https://leetcode-cn.com/problems/n-queens/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/08_深搜和广搜/51solveNQueens.cpp)
+
+- [22. 括号生成 (median)](https://leetcode-cn.com/problems/generate-parentheses/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/08_深搜和广搜/22generateParenthesis.cpp)
+
+- [37. 解数独 (hard)](https://leetcode-cn.com/problems/sudoku-solver/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/08_深搜和广搜/37solveSudoku.cpp)

@@ -17,6 +17,7 @@ https://leetcode-cn.com/problems/n-queens/
 \ (1,1)(2,2), (0,1)(1,2) --> i-j 相等
 / (1,0)(0,1), (2,1)(1,2) --> i+j 相等
 
+用 usedPlus, usedMinus 做剪枝
 */
 
 class Solution {

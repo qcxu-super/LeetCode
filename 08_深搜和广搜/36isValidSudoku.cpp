@@ -7,6 +7,10 @@ using namespace std;
 36. 有效的数独
 https://leetcode-cn.com/problems/valid-sudoku/
 
+经37题验证，数组更快些。。
+unordered_set<char> row[9]
+unordered_set<char> col[9]
+unordered_set<char> box[9]
 */
 
 class Solution {
@@ -39,6 +43,7 @@ class Solution {
     }
 
    private:
+    // 二维转一维 
     int hash(int x, int y) {
         return 3 * x + y;
     }
