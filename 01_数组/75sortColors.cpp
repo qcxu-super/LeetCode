@@ -7,7 +7,10 @@ using namespace std;
 75. 颜色分类
 https://leetcode-cn.com/problems/sort-colors/
 
-想法：左指针用来交换0，右指针用来交换1，遍历指针如果遍历到0和1就交换。左指针一定在右指针的左边
+*/
+
+/*
+左指针用来交换0，右指针用来交换1，遍历指针如果遍历到0和1就交换。左指针一定在右指针的左边
 */
 
 class Solution {
@@ -51,5 +54,44 @@ class Solution {
         // for (int& n : nums)
         //     cout << n << ",";
         // cout << endl;
+    }
+};
+
+
+/*
+0往最左边换，2往最右边换
+坑: swap(nums, sj, i) 之后，不能直接++i。万一原来nums[sj]==0，还要再交换到si的位置才对
+*/
+
+class Solution {
+   public:
+    void sortColors(vector<int>& nums) {
+        int n = nums.size();
+        int si = 0;
+        int sj = nums.size() - 1;
+        while (si < n && nums[si] == 0)
+            ++si;
+        while (sj >= 0 && nums[sj] == 2)
+            --sj;
+
+        int i = si;
+        while (i <= sj && si <= sj) {
+            if (nums[i] == 0 && si != i) {
+                swap(nums, si, i);
+                ++si;
+            } else if (nums[i] == 2 && sj != i) {
+                swap(nums, sj, i);
+                --sj;
+            } else {
+                ++i;
+            }
+        }
+    }
+
+   private:
+    void swap(vector<int>& nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 };

@@ -2,6 +2,20 @@
 
 - [66. 加一 (easy)](https://leetcode-cn.com/problems/plus-one/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/66plusOne.cpp)
 
+- [31. 下一个排列 (median)](https://leetcode.cn/problems/next-permutation/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/31nextPermutation.cpp)
+
+- [48. 旋转图像 (median)](https://leetcode.cn/problems/rotate-image/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/48rotate.cpp)
+
+- [54. 螺旋矩阵 (median)](https://leetcode.cn/problems/spiral-matrix/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/54spiralOrder.cpp)
+
+- [59. 螺旋矩阵 II (median)](https://leetcode.cn/problems/spiral-matrix-ii/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/59generateMatrix.cpp)
+
+- [498. 对角线遍历 (median)](https://leetcode.cn/problems/diagonal-traverse/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/498findDiagonalOrder.cpp)
+
+- [128. 最长连续序列 (median)](https://leetcode.cn/problems/longest-consecutive-sequence/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/128longestConsecutive.cpp)
+
+- [136. 只出现一次的数字 (easy)](https://leetcode.cn/problems/single-number/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/136singleNumber.cpp)
+
 
 # 2.合并数组
 
@@ -44,6 +58,9 @@
 
 - [560. 和为 K 的子数组 (median)](https://leetcode-cn.com/problems/subarray-sum-equals-k/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/560subarraySum.cpp)
 
+- [238. 除自身以外数组的乘积 (median)](https://leetcode.cn/problems/product-of-array-except-self/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/238productExceptSelf.cpp)
+
+
 
 # 5.双指针扫描
 
@@ -72,3 +89,5 @@
 - [76. 最小覆盖子串 (hard)](https://leetcode-cn.com/problems/minimum-window-substring/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/76minWindow.cpp)
 
 - [287. 寻找重复数 (median)](https://leetcode-cn.com/problems/find-the-duplicate-number/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/287findDuplicate.cpp)
+
+
