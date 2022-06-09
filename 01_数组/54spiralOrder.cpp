@@ -10,37 +10,46 @@ https://leetcode.cn/problems/spiral-matrix/
 class Solution {
    public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        int m = matrix.size();
-        int n = matrix[0].size();
-        vector<vector<bool>> visited(m, vector<bool>(n, false));
+        m = matrix.size();
+        n = matrix[0].size();
+        vector<int> ans;
 
-        int dx[4] = {0, 1, 0, -1};
+        int dx[4] = {0, 1, 0, -1};  // 右下左上
         int dy[4] = {1, 0, -1, 0};
         int k = 0;
-
+        vector<vector<int>> visited(m, vector<int>(n, false));
         int i = 0, j = -1, totnum = 0;
-        vector<int> ans;
         while (totnum < m * n) {
-            int ni = i + dx[k];
-            int nj = j + dy[k];
-            //
+            // 本层逻辑
+            i += dx[k];
+            j += dy[k];
+            // cout << "i=" << i << ",j=" << j << ",k=" << k << endl;
+            if (isValid(i, j) && !visited[i][j]) {
+                ans.push_back(matrix[i][j]);
+                visited[i][j] = true;
+                totnum++;
+            }
+
+            // 下一次方向
+            // 右上角
             if (i == 0 && j == n - 1)
-                k = 1;
-            else if (m > 1 && i == m - 1 && j == n - 1)
-                k = 2;
-            else if (m > 1 && i == m - 1 && j == 0) // [0,0]的别转到这里
-                k = 3;
-            else if (ni >= 0 && ni < m && nj >= 0 && nj < n && visited[ni][nj])
                 k = (k + 1) % 4;
-            //
-            i = i + dx[k];
-            j = j + dy[k];
-            // cout << "k=" << k << ",i=" << i << ",j=" << j << ",num=" << matrix[i][j] << endl;
-            //
-            ans.push_back(matrix[i][j]);
-            visited[i][j] = true;
-            totnum += 1;
+            // 右下角
+            else if (i == m - 1 && j == n - 1)
+                k = (k + 1) % 4;
+            // 左下角  [[2,3]]这种只有一行的别落到这种情况
+            else if (m > 1 && i == m - 1 && j == 0)
+                k = (k + 1) % 4;
+            // 已访问过
+            else if (isValid(i + dx[k], j + dy[k]) >= 0 && visited[i + dx[k]][j + dy[k]])
+                k = (k + 1) % 4;
         }
         return ans;
+    }
+
+   private:
+    int m, n;
+    bool isValid(int i, int j) {
+        return i >= 0 && i < m && j >= 0 && j < n;
     }
 };

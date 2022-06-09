@@ -17,7 +17,7 @@ struct TreeNode {
 
 - [98. 验证二叉搜索树 (median)](https://leetcode-cn.com/problems/validate-binary-search-tree/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/98isValidBST.cpp)
 
-- [1245. 树的直径 (median)](https://leetcode-cn.com/problems/tree-diameter/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/treeDiameter.cpp)
+- [1245. 树的直径 (median)](https://leetcode-cn.com/problems/tree-diameter/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/1245treeDiameter.cpp)
 
 - [236. 二叉树的最近公共祖先 (median)](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/236lowestCommonAncestor.cpp)
 
@@ -61,6 +61,7 @@ struct TreeNode {
 
 - [101. 对称二叉树 (easy)](https://leetcode-cn.com/problems/symmetric-tree/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/101isSymmetric.cpp)
 
+- [剑指 Offer 36. 二叉搜索树与双向链表 (median)](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/36treeToDoublyList.cpp)
 
 # 4.二叉搜索树
 
@@ -103,6 +104,9 @@ struct TreeNode {
 
 - [538. 把二叉搜索树转换为累加树 (median)](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/538convertBST.cpp)
 
+- [230. 二叉搜索树中第K小的元素 (median)](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/230kthSmallest.cpp)
+
+- [776. 拆分二叉搜索树 (median)](https://leetcode.cn/problems/split-bst/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/776splitBST.cpp)
 
 # 5.Trie树
 
@@ -117,3 +121,5 @@ struct TreeNode {
 - [212. 单词搜索 II (hard)](https://leetcode-cn.com/problems/word-search-ii/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/212findWords.cpp)
 
 - [79. 单词搜索 (median)](https://leetcode-cn.com/problems/word-search/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/79exist.cpp)
+
+- [440. 字典序的第K小数字 (hard)](https://leetcode.cn/problems/k-th-smallest-in-lexicographical-order/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/440findKthNumber.cpp)

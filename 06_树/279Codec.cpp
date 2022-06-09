@@ -54,7 +54,7 @@ class Codec {
 
         string nums;
         while (idx < data.size() && data[idx] != ',') {
-            if (data[idx] == '-')
+            if (data[idx] == '-') // 负数
                 nums += data[idx];
             else
                 nums += to_string(data[idx] - '0');

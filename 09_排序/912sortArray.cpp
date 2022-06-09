@@ -46,7 +46,7 @@ class Solution {
             // j出界；或者都在范围里，谁小要谁
             if (j > right || (i <= mid && a[i] < a[j]))
                 temp[k] = a[i++];
-            // i出界；或者都在范围里，谁小要谁
+            // i出界；或者都在范围里，谁大要谁
             else
                 temp[k] = a[j++];
         }

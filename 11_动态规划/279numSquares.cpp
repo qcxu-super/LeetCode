@@ -13,7 +13,7 @@ https://leetcode-cn.com/problems/perfect-squares/
 状态f[i,j]: 前i个完全平方数，凑成体积j 的最少数量
 状态转移:
 还没有取第i个数: f[i,j] = f[i-1,j]
-取第i个数: f[i,j] = f[i,j-n^2] + 1
+取第i个数: f[i,j] = f[i,j-i^2] + 1
 初值: f[i,0] = 0
 目标: min{f[i,n]}, 0<=i<n
 */

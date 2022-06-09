@@ -60,3 +60,46 @@ class Solution {
         return ans;
     }
 };
+
+
+/*定义两个*/
+class Solution {
+   public:
+    int findNumberOfLIS(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> f1(n, 1);  // 以第i个为结尾的最长递增子序列的长度
+        vector<int> f2(n, 0);  // 以第i个为结尾的最长递增子序列的个数
+        // 以第i个位结尾，就是每个阶段最优
+        for (int i = 0; i < n; ++i) {
+            // 计算最长递增子序列
+            for (int j = 0; j < i; ++j) {
+                if (nums[j] < nums[i]) {
+                    f1[i] = max(f1[i], f1[j] + 1);
+                }
+            }
+            // 计算这样序列的个数
+            if (f1[i] == 1) {
+                f2[i] = 1;
+                continue;
+            }
+            for (int j = 0; j < i; ++j) {
+                if (nums[j] < nums[i] && f1[j] + 1 == f1[i])
+                    f2[i] += f2[j];
+            }
+        }
+
+        // 找到全局最长
+        int maxLength = 0;
+        for (int i = 0; i < n; ++i) {
+            maxLength = max(maxLength, f1[i]);
+        }
+
+        // 找到全局最长的方案总数
+        int ans = 0;
+        for (int i = 0; i < n; ++i) {
+            if (f1[i] == maxLength)
+                ans += f2[i];
+        }
+        return ans;
+    }
+};

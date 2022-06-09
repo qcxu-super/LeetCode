@@ -104,7 +104,16 @@ class Solution {
     }
 };
 
-/*递归 + 记忆化搜索 --答案*/
+/*
+递归 + 记忆化搜索 --答案
+
+有一个坑：最后取答案是从dfs()返回值拿更容易一些，opt[amount]里拿更麻烦
+return ans == INT_MAX ? INT_MAX : ans;
+return amount == 0 ? 0 : (opt[amount]==INT_MAX ? -1 : opt[amount]);
+
+1.可能因为amount=0，从未更新过opt[amount]
+2.不可能凑成amount时，最后opt[amount]=INT_MAX
+*/
 class Solution {
    public:
     int coinChange(vector<int>& coins, int amount) {

@@ -23,6 +23,8 @@ class Solution {
     int findMaxValueOfEquation(vector<vector<int>>& points, int k) {
         int ans = -1e9;
         deque<int> q;
+
+        // 相当于把外部循环固定了，也就是 xi+yi 是固定的。循环里面只要考虑 yj-xj
         for (int i = 0; i < points.size(); ++i) {
 
             // 方便看。但得写在条件里面。不然pop完了，front又变了。。。
@@ -38,7 +40,8 @@ class Solution {
             // 取队头作为窗口最优解 yi + xi + yj - xj
             if (!q.empty())
                 ans = max(ans, points[i][1] + points[i][0] + points[q.front()][1] - points[q.front()][0]);
-            // 维护单调队列单调性 y[i]-x[i] >= y[j] - x[j]
+            // 维护单调队列单调性，yj-xj递增，跟新元素yi-xi比
+            // j = q.back(), y[i]-x[i] > y[j] - x[j] --> y[j]-x[j] 永无出头之日，就pop掉队尾
             while (!q.empty() && points[q.back()][1] - points[q.back()][0] < points[i][1] - points[i][0]) {
                 q.pop_back();
             }

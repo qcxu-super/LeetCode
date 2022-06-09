@@ -58,7 +58,7 @@ O(nlogn)    归并排序             堆排序               快速排序
 4.归并排序(Merge Sort)：基于分治的算法
 原问题：把数组排序
 子问题：把数组前一半、后一半分别排序。然后再合并两个有序数组
-时间复杂度：一层是O(N)，每一层是O(logN)。所以总共O(NlogN)
+时间复杂度：遍历每一层是O(N)，每一层是O(logN)。所以总共O(NlogN)
 （代码见912题）
 
 5.快速排序(Quick Sort)：也是基于分治的算法
@@ -121,4 +121,8 @@ O(nlogn)    归并排序             堆排序               快速排序
 
 - [493. 翻转对 (hard)](https://leetcode-cn.com/problems/reverse-pairs/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/493reversePairs.cpp)
 
+- [剑指 Offer 51. 数组中的逆序对 (hard)](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/51reversePairs.cpp)
+
 - [327. 区间和的个数 (hard)](https://leetcode-cn.com/problems/count-of-range-sum/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/327countRangeSum.cpp)
+
+- [399. 螺丝和螺帽问题 (hard)](https://www.jiuzhang.com/solutions/nuts-bolts-problem/) | [solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/399sortNutsAndBolts.cpp)

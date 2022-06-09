@@ -34,15 +34,15 @@ priority_queue 是二叉堆的应用。
 默认的比较函数是<，即大顶堆
 ```
 
-- [23. 合并K个升序链表 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/23mergeKLists.cpp)
+- [23. 合并K个升序链表 (hard)](https://leetcode.cn/problems/merge-k-sorted-lists/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/23mergeKLists.cpp)
 
-- [239. 滑动窗口最大值 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/239maxSlidingWindow.cpp)
+- [239. 滑动窗口最大值 (hard)](https://leetcode.cn/problems/sliding-window-maximum/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/239maxSlidingWindow.cpp)
 
-- [703. 数据流中的第 K 大元素 (easy)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/703KthLargest.cpp)
+- [703. 数据流中的第 K 大元素 (easy)](https://leetcode.cn/problems/kth-largest-element-in-a-stream/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/703KthLargest.cpp)
 
-- [215. 数组中的第K个最大元素 (median)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/215findKthLargest.cpp)
+- [215. 数组中的第K个最大元素 (median)](https://leetcode.cn/problems/kth-largest-element-in-an-array/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/215findKthLargest.cpp)
 
-- [973. 最接近原点的 K 个点 (median)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/973kClosest.cpp)
+- [973. 最接近原点的 K 个点 (median)](https://leetcode.cn/problems/k-closest-points-to-origin/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/973kClosest.cpp)
 
 
 # 4.单调栈
@@ -59,11 +59,11 @@ for 每个元素
     入栈（新元素+累积宽度）
 ```
 
-- [84. 柱状图中最大的矩形 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/84largestRectangleArea.cpp)
+- [84. 柱状图中最大的矩形 (hard)](https://leetcode.cn/problems/largest-rectangle-in-histogram/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/84largestRectangleArea.cpp)
 
-- [42. 接雨水 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/42trap.cpp)
+- [42. 接雨水 (hard)](https://leetcode.cn/problems/trapping-rain-water/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/42trap.cpp)
 
-- [85. 最大矩形 (hard)-TODO](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/85maximalRectangle.cpp)
+- [85. 最大矩形 (hard)-todo](https://leetcode.cn/problems/maximal-rectangle/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/85maximalRectangle.cpp)
 
 
 # 5.单调队列
@@ -83,5 +83,5 @@ for 每个元素:
 （2,3可对换，取决于i是否为候选项）
 ```
 
-- [239. 滑动窗口最大值 (hard)](https://leetcode-cn.com/problems/sort-list/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/239maxSlidingWindow.cpp)
+- [239. 滑动窗口最大值 (hard)](https://leetcode.cn/problems/sliding-window-maximum/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/239maxSlidingWindow.cpp)
 
