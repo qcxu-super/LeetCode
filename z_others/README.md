@@ -12,9 +12,9 @@
 
 - [前缀和、差分](https://github.com/qcxu-super/LeetCode/blob/master/01_数组)、[双指针](https://github.com/qcxu-super/LeetCode/blob/master/01_数组)、[滑动窗口](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列) (算法)
 
-- [字符串](https://github.com/qcxu-super/LeetCode/blob/master/13_字符串] (数据结构)
+- [字符串](https://github.com/qcxu-super/LeetCode/blob/master/13_字符串]) (数据结构)
 
-### 
+### 题目
 
 - [54. 螺旋矩阵 (median)](https://leetcode.cn/problems/spiral-matrix/) | [01_数组_solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/54spiralOrder.cpp)
 
@@ -45,7 +45,7 @@
 
 - 图论算法 (算法)
 
-### 
+### 题目
 
 - [98. 验证二叉搜索树 (median)](https://leetcode-cn.com/problems/validate-binary-search-tree/) |  [06_树_solution](https://github.com/qcxu-super/LeetCode/blob/master/06_树/98isValidBST.cpp)
 
@@ -70,7 +70,7 @@
 
 - [动态规划](https://github.com/qcxu-super/LeetCode/blob/master/11_动态规划) (算法)
 
-### 
+### 题目
 
 - [1143. 最长公共子序列 (median)](https://leetcode-cn.com/problems/longest-common-subsequence/) |  [11_动态规划_solution](https://github.com/qcxu-super/LeetCode/blob/master/11_动态规划/1143longestCommonSubsequence.cpp)
 
@@ -96,7 +96,7 @@
 
 - [二分](https://github.com/qcxu-super/LeetCode/blob/master/05_递归和分治)
 
-### 
+### 题目
 
 - [912. 排序数组 (median)](https://leetcode-cn.com/problems/sort-an-array/) |  [09_排序_solution](https://github.com/qcxu-super/LeetCode/blob/master/09_排序/912sortArray.cpp)
 
