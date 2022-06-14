@@ -22,8 +22,8 @@ class Solution {
             if (i >= 1 && nums[i] == nums[i - 1])
                 continue;
             vector<vector<int> > jks = twoSum(nums, i + 1, -nums[i]);
-            for (vector<int> jk : jks) {
-                ans.push_back({nums[i], nums[jk[0]], nums[jk[1]]});
+            for (vector<int>& jk : jks) {
+                ans.push_back({nums[i], jk[0], jk[1]});
             }
         }
         return ans;
@@ -32,14 +32,25 @@ class Solution {
    private:
     vector<vector<int> > twoSum(vector<int>& nums, int start, int target) {
         vector<vector<int> > ans;
-        int j = nums.size() - 1;
-        for (int i = start; i < nums.size(); ++i) {
-            if (i >= start + 1 && nums[i] == nums[i - 1])
+        int i = start, j = nums.size() - 1;
+        while (i < j) {
+            if (i >= start + 1 && nums[i] == nums[i - 1]) {
+                ++i;
                 continue;
-            while (i < j && nums[i] + nums[j] > target)
+            }
+            if (j < nums.size() - 1 && nums[j] == nums[j + 1]) {
                 --j;
-            if (i < j && nums[i] + nums[j] == target)
-                ans.push_back({i, j});
+                continue;
+            }
+            if (nums[i] + nums[j] < target)
+                ++i;
+            else if (nums[i] + nums[j] > target)
+                --j;
+            else {
+                ans.push_back({nums[i], nums[j]});
+                ++i;
+                --j;
+            }
         }
         return ans;
     }

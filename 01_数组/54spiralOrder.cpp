@@ -12,36 +12,21 @@ class Solution {
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
         m = matrix.size();
         n = matrix[0].size();
+        visited = vector<vector<int>>(m, vector<int>(n, false));
         vector<int> ans;
-
-        int dx[4] = {0, 1, 0, -1};  // 右下左上
+        int dx[4] = {0, 1, 0, -1};  //右下左上
         int dy[4] = {1, 0, -1, 0};
         int k = 0;
-        vector<vector<int>> visited(m, vector<int>(n, false));
-        int i = 0, j = -1, totnum = 0;
-        while (totnum < m * n) {
+        int i = 0, j = -1;
+        for (int totnum = 0; totnum < m * n; ++totnum) {
             // 本层逻辑
             i += dx[k];
             j += dy[k];
-            // cout << "i=" << i << ",j=" << j << ",k=" << k << endl;
-            if (isValid(i, j) && !visited[i][j]) {
-                ans.push_back(matrix[i][j]);
-                visited[i][j] = true;
-                totnum++;
-            }
+            ans.push_back(matrix[i][j]);
+            visited[i][j] = true;
 
             // 下一次方向
-            // 右上角
-            if (i == 0 && j == n - 1)
-                k = (k + 1) % 4;
-            // 右下角
-            else if (i == m - 1 && j == n - 1)
-                k = (k + 1) % 4;
-            // 左下角  [[2,3]]这种只有一行的别落到这种情况
-            else if (m > 1 && i == m - 1 && j == 0)
-                k = (k + 1) % 4;
-            // 已访问过
-            else if (isValid(i + dx[k], j + dy[k]) >= 0 && visited[i + dx[k]][j + dy[k]])
+            if (!isValid(i + dx[k], j + dy[k]) || isVisited(i + dx[k], j + dy[k]))
                 k = (k + 1) % 4;
         }
         return ans;
@@ -49,7 +34,12 @@ class Solution {
 
    private:
     int m, n;
-    bool isValid(int i, int j) {
-        return i >= 0 && i < m && j >= 0 && j < n;
+    vector<vector<int>> visited;
+    bool isValid(int x, int y) {
+        return x >= 0 && x < m && y >= 0 && y < n;
+    }
+
+    bool isVisited(int x, int y) {
+        return visited[x][y];
     }
 };

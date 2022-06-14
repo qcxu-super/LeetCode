@@ -78,7 +78,7 @@
 
 - [167. 两数之和 II - 输入有序数组 (median)](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/167twoSum.cpp)
 
-- [1. 两数之和 (easy)](https://leetcode-cn.com/problems/corporate-flight-bookings/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/1twoSum.cpp)
+- [1. 两数之和 (easy)](https://leetcode.cn/problems/two-sum/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/1twoSum.cpp)
 
 - [15. 三数之和 (median)](https://leetcode-cn.com/problems/3sum/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/01_数组/15threeSum.cpp)
 

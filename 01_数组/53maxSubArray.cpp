@@ -20,6 +20,7 @@ class Solution {
         for (int i = 1; i <= n; ++i)
             s[i] = s[i - 1] + nums[i - 1];
 
+        // =min{s[j]}, [0,j]的最小前缀和
         vector<int> preMin(n + 1);
         preMin[0] = s[0];
         for (int i = 1; i <= n; ++i)
