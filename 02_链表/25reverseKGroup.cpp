@@ -1,6 +1,8 @@
 /*
 25. K 个一组翻转链表
 https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
+
+划重点: 重点关注每组的头。preGroupHead, head, nextGroupHead
 */
 
 struct ListNode {
@@ -45,10 +47,11 @@ class Solution {
             headCpy = headCpy->next;
             i++;
         }
-        if (headCpy == nullptr)
-            return nullptr;
-        else
-            return headCpy;
+        // if (headCpy == nullptr)
+        //     return nullptr;
+        // else
+        //     return headCpy;
+        return headCpy;
     }
 
     void reverseList(ListNode* head, ListNode* stop) {

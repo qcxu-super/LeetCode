@@ -44,6 +44,7 @@ priority_queue 是二叉堆的应用。
 
 - [973. 最接近原点的 K 个点 (median)](https://leetcode.cn/problems/k-closest-points-to-origin/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/973kClosest.cpp)
 
+- [347. 前 K 个高频元素 (median)](https://leetcode.cn/problems/top-k-frequent-elements/) |  [solution](https://github.com/qcxu-super/LeetCode/blob/master/03_堆栈和队列/347topKFrequent.cpp)
 
 # 4.单调栈
 
