@@ -4,6 +4,8 @@
 using namespace std;
 
 /*
+22. 括号生成
+https://leetcode-cn.com/problems/generate-parentheses/
 
 思路1：递归/前面说的排列组合问题。（在 08_深搜和广搜 里，有暴力递归和对应的剪枝优化解法）
 

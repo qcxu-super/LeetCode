@@ -1,22 +1,14 @@
 {
     "files.associations": {
+        "typeinfo": "cpp",
+        "iosfwd": "cpp",
         "iostream": "cpp",
-        "random": "cpp",
-        "ostream": "cpp",
-        "cstdio": "cpp",
-        "vector": "cpp",
-        "new": "cpp",
-        "deque": "cpp",
-        "string": "cpp",
-        "tuple": "cpp",
-        "string_view": "cpp",
-        "map": "cpp",
-        "algorithm": "cpp",
-        "array": "cpp",
-        "initializer_list": "cpp",
-        "utility": "cpp",
-        "unordered_set": "cpp",
-        "limits": "cpp"
+        "vector": "cpp"
+    },
+    "code-runner.runInTerminal": true,
+    "C_Cpp.default.cppStandard": "c++11",
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && clang++ -std=c++11 -g $fileName -o ../build/$fileNameWithoutExt && $dir/../build/$fileNameWithoutExt"
     },
     "C_Cpp.errorSquiggles": "Enabled",
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Chromium, IndentWidth: 4}"

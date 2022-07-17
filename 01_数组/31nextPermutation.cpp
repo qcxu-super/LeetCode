@@ -11,7 +11,7 @@ https://leetcode.cn/problems/next-permutation/
 
 1.从后往前找idx，[idx,end]为递减序列
 2.在[idx,end]里，找比idx-1大一点数，跟idx-1交换 --> 更高位的数字比原来的大了一些
-3.对[idx,end]升序排序 --> 确定高位数字的清苦下，整个数字是最小的
+3.对[idx,end]升序排序 --> 确定高位数字的情况下，整个数字是最小的
 */
 
 class Solution {

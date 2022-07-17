@@ -64,7 +64,9 @@ class MyCircularDeque {
             return q.back();
     }
 
-    bool isEmpty() { return q.empty(); }
+    bool isEmpty() {
+        return q.empty();
+    }
 
     bool isFull() {
         if (q.size() == maxLen)
